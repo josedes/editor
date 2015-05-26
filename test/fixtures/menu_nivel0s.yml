@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  estado: MyString
+  posicion: 1
+  contenido_id: 
+  usuario_id: 
+
+two:
+  titulo: MyString
+  estado: MyString
+  posicion: 1
+  contenido_id: 
+  usuario_id: 
