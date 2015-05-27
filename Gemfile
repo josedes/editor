@@ -48,10 +48,7 @@ group :development do
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'roo'
 
-  #la siguiente gema permite manejar varios archivos seeds
-  gem "seedbank"
   
   #gem 'rails_layout'
   #gem 'debugger', '~> 1.6.6'
@@ -63,6 +60,9 @@ end
 group :production do
   gem 'pg'
   gem 'thin'
+   gem 'roo'
+     #la siguiente gema permite manejar varios archivos seeds
+  gem "seedbank"
 end
 
 
