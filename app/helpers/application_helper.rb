@@ -1,6 +1,7 @@
 module ApplicationHelper
 
+#error corregido
 	def menu_principal
-		MenuNivel0.all
+		Menu0.all
 	end
 end

@@ -1,6 +1,6 @@
 class PagesDynamicController < ApplicationController
 def show2
-    @page = MenuNivel0.find(params[:id])
+    @page = Nivel0.find(params[:id])
     puts "IMPRIMIR PAGE"
     puts @page
     #@opcionesMenuPrincipal = MenuNivel0.all

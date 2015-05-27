@@ -1,7 +1,7 @@
 class DynamicRouter
 def self.load
     EasyEditorDevise::Application.routes.draw do
-      MenuNivel0.all.each do |pg|
+      Nivel0.all.each do |pg|
         puts "Routing #{pg.enlace}"
         get "/#{pg.enlace}", :to => "pages_dynamic#show",  defaults: { id: pg.id }
       end

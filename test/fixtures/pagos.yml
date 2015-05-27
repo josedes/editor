@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fechaPago: 2015-05-26
+  tipoPago: 1
+  numero: MyString
+  banco: MyString
+  monto: 9.99
+  usuario: 
+
+two:
+  fechaPago: 2015-05-26
+  tipoPago: 1
+  numero: MyString
+  banco: MyString
+  monto: 9.99
+  usuario: 
