@@ -11,5 +11,5 @@ validates :username, presence: true, uniqueness: true,
     format: {with: /([A-Za-z0-9\-\_]+)/, message: "Solo puedes colocar letras, números y guiones"}
 validates :nombre, presence: true
 validates :apellido, presence: false
-         
+
 end

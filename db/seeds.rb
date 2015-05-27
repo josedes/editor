@@ -6,7 +6,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+puts "Borrar contenido de las tablas Usuarios y niveles"
+
+puts "Borrando usuarios"
+Usuario.delete_all
+
+puts "Borrando enlaces de nivel 0"
+Menu0.delete_all
+
 puts "Crear el usuario de prueba"
+
 u = Usuario.new(
 #  :username => "#{title} #{name} #{surname}",
 #  :email => "#{name}.#{surname}_#{num}@localtinkers.com",
@@ -16,11 +25,13 @@ u = Usuario.new(
   nombre: "Usuario root",
   apellido: "",
   email: "root@gmail.com",
-  password: '12345678'
+  password: '12345678',
+  rol: 0
 
 )
 u.save!(validate: false)
 
+puts u.id
 puts "Creación de las opciones del Menú principal"
 
 #titulos_vinculos = [
@@ -46,9 +57,5 @@ titulos_vinculos = {
 
 #Generar los registros para cada enlace del menu principal en la BD
 titulos_vinculos.each do |enlace, titulo|
- MenuNivel0.create( titulo: titulo, enlace: enlace, usuario_id: u.id )
+ Menu0.create( titulo: titulo, enlace: enlace)
 end
-
-#titulos_vinculos.each do |titulo|
-#  MenuNivel0.create( titulo: titulo, usuario_id: u.id )
-#end
