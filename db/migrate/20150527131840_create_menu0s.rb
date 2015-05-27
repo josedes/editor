@@ -6,9 +6,7 @@ class CreateMenu0s < ActiveRecord::Migration
       t.integer :estado
       t.integer :posicion
       t.string :enlace
-      t.references :contenido, index: true
       t.timestamps null: false
     end
-    add_foreign_key :menu0s, :contenidos
   end
 end

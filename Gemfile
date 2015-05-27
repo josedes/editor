@@ -43,6 +43,11 @@ gem 'font-awesome-sass', '~> 4.3.0'
 gem 'devise', github: 'plataformatec/devise'
 
 
+   gem 'roo'
+     #la siguiente gema permite manejar varios archivos seeds
+  gem "seedbank"
+
+
 group :development do
   gem 'sqlite3'
   gem 'better_errors'
@@ -60,9 +65,6 @@ end
 group :production do
   gem 'pg'
   gem 'thin'
-   gem 'roo'
-     #la siguiente gema permite manejar varios archivos seeds
-  gem "seedbank"
 end
 
 
