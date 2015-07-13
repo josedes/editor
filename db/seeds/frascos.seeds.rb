@@ -128,7 +128,7 @@ for fila in (4 .. ex.last_row)
                     usuario_id: u[0].id  
                     )
 
-    #frasco.save(validate: false)
+    frasco.save(validate: false)
 
      # arrregloFrascosxUsuario.each do |elemento|
      #   puts "FRASCO #{numeroFrasco} = #{elemento}"
