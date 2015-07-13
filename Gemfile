@@ -44,6 +44,9 @@ gem 'devise', github: 'plataformatec/devise'
 
 
    gem 'roo'
+  # gem 'roo-xls'
+  gem 'roo-xls'
+
      #la siguiente gema permite manejar varios archivos seeds
   gem "seedbank"
 
@@ -65,6 +68,10 @@ end
 group :production do
   gem 'pg'
   gem 'thin'
+end
+
+group :test do
+  gem 'pg'
 end
 
 

@@ -1,6 +1,7 @@
-class AddCamposToUsuarios < ActiveRecord::Migration
+    class AddCamposToUsuarios < ActiveRecord::Migration
   def change
     add_column :usuarios, :cedula, :string
+    add_column :usuarios, :numeroExcel, :string
     add_column :usuarios, :historia, :string
     add_column :usuarios, :telefonoHabitacion, :string
     add_column :usuarios, :telefonoTrabajo, :string
@@ -17,6 +18,5 @@ class AddCamposToUsuarios < ActiveRecord::Migration
     add_column :usuarios, :asp, :integer
     add_column :usuarios, :blom, :integer
     add_column :usuarios, :rol, :integer
-
   end
 end

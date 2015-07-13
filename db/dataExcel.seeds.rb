@@ -1,6 +1,6 @@
 #guardo los datos del excel en un arreglo llamado celdas
        $celdas=[] 
-       ex = Roo::Excel.new("#{Rails.root}/db/seeds/pacientes-de-Inmunoterapia.xls")
+       ex = Roo::Excel.new("#{Rails.root}/db/pacientes-de-Inmunoterapia.xls")
 
        ex.default_sheet = ex.sheets.first
        posC=0

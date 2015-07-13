@@ -1,5 +1,7 @@
 class SessionsController < Devise::SessionsController
-# after_filter :after_sign_in_path_for(resources)
+
+ after_filter :after_sign_in_path_for(resources)
+
 def new
   puts "NEW"
   super
@@ -7,6 +9,7 @@ end
 
 def create
   puts "create"
+  
 super
 end
 
